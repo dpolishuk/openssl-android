@@ -62,11 +62,11 @@
 #include <openssl/bn.h>
 #include <openssl/rsa.h>
 
-#ifdef OPENSSL_NO_DEPRECATED
+// #ifdef OPENSSL_NO_DEPRECATED
 
-static void *dummy=&dummy;
+// static void *dummy=&dummy;
 
-#else
+// #else
 
 RSA *RSA_generate_key(int bits, unsigned long e_value,
 	     void (*callback)(int,int,void *), void *cb_arg)
@@ -98,4 +98,4 @@ err:
 	if(rsa) RSA_free(rsa);
 	return 0;
 	}
-#endif
+// #endif

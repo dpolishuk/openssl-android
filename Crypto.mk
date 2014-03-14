@@ -43,7 +43,7 @@ LOCAL_C_INCLUDES += $(target_c_includes)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE:= libcrypto
 LOCAL_ADDITIONAL_DEPENDENCIES := $(local_additional_dependencies)
-include $(BUILD_SHARED_LIBRARY)
+#include $(BUILD_SHARED_LIBRARY)
 
 #######################################
 # host shared library

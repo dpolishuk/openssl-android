@@ -457,6 +457,7 @@ common_src_files := \
   crypto/rsa/rsa_sign.c \
   crypto/rsa/rsa_ssl.c \
   crypto/rsa/rsa_x931.c \
+  crypto/rsa/rsa_depr.c \
   crypto/sha/sha1_one.c \
   crypto/sha/sha1dgst.c \
   crypto/sha/sha256.c \

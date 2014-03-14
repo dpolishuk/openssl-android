@@ -283,10 +283,10 @@ RSA *	RSA_new_method(ENGINE *engine);
 int	RSA_size(const RSA *rsa);
 
 /* Deprecated version */
-#ifndef OPENSSL_NO_DEPRECATED
+// #ifndef OPENSSL_NO_DEPRECATED
 RSA *	RSA_generate_key(int bits, unsigned long e,void
 		(*callback)(int,int,void *),void *cb_arg);
-#endif /* !defined(OPENSSL_NO_DEPRECATED) */
+// #endif  !defined(OPENSSL_NO_DEPRECATED) 
 
 /* New version */
 int	RSA_generate_key_ex(RSA *rsa, int bits, BIGNUM *e, BN_GENCB *cb);
